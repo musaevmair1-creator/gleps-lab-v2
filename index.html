@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080817">
+<meta name="description" content="Gleps Lab — помощь с настройкой Meta Quest 3S, играми и VR-инструментами.">
+<title>Gleps Lab | VR-помощник</title>
+<style>
+:root{--bg:#070714;--panel:#101027;--panel2:#15132f;--text:#f7f4ff;--muted:#b8b4d6;--purple:#8c4dff;--pink:#c15dff;--line:#4e2c99;--glow:0 0 28px #742cff33}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#32105b55,transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:5;background:#080817eF;backdrop-filter:blur(16px);border-bottom:1px solid #33205e}.navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-size:1.35rem;font-weight:850;letter-spacing:-.04em}.brandmark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#9d5cff,#4821b9);box-shadow:var(--glow);font-size:1.2rem}.brand span:last-child{color:#b77bff}.links{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.links a:hover{color:white}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:999px;padding:12px 19px;background:linear-gradient(110deg,#8a42ff,#5428e8);color:white;font-weight:750;box-shadow:0 8px 28px #652aff38;transition:.2s transform,.2s box-shadow}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px #7b36ff66}.btn.secondary{background:#15132a;border-color:#55319c;box-shadow:none}.hero{padding:78px 0 66px;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:440px;height:440px;border-radius:50%;right:-80px;top:-120px;background:#7527ff22;filter:blur(30px);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.pill{display:inline-flex;border:1px solid #6334a7;border-radius:999px;padding:5px 12px;color:#d6b8ff;background:#27134388;font-size:.85rem}.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.02;letter-spacing:-.06em;margin:18px 0}.gradient{background:linear-gradient(90deg,#b98aff,#773bff,#e5a8ff);color:transparent;background-clip:text}.lead{font-size:1.12rem;color:var(--muted);max-width:560px}.perks{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0 30px;color:#ddd4f7}.perks span{font-size:.92rem}.orb{min-height:340px;display:grid;place-items:center;position:relative}.orb-circle{width:min(330px,78vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#9b5cff77,#35126d33 45%,#080817 70%);border:1px solid #a86dff55;box-shadow:0 0 90px #762cff30,inset 0 0 50px #6f36c633;animation:float 5s ease-in-out infinite}.headset{font-size:clamp(6rem,15vw,10rem);filter:drop-shadow(0 10px 26px #9a4bff88);transform:rotate(-12deg)}.orbit{position:absolute;inset:8%;border:1px dashed #9654ff66;border-radius:50%;animation:spin 24s linear infinite}.orbit:before,.orbit:after{content:"✦";position:absolute;color:#d6a7ff;font-size:1.4rem}.orbit:before{top:6%;left:22%}.orbit:after{bottom:9%;right:17%}@keyframes float{50%{transform:translateY(-12px)}}@keyframes spin{to{transform:rotate(360deg)}}section{padding:52px 0;scroll-margin-top:80px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}.eyebrow{color:#bd91ff;font-size:.85rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em}.section-head h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.04em;margin:4px 0}.sub{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#11112a,#0a0a19);border:1px solid #43277c;border-radius:18px;padding:22px;position:relative;overflow:hidden;transition:.22s transform,.22s border-color,.22s background}.card:hover{transform:translateY(-5px);border-color:#a064ff;background:linear-gradient(145deg,#1b1235,#0b0b1c)}.ico{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#5c25ba44;border:1px solid #8e4dff55;font-size:1.4rem}.card h3{margin:16px 0 7px;font-size:1.08rem}.card p{color:var(--muted);font-size:.92rem;min-height:75px;margin:0 0 16px}.price{font-size:1.25rem;font-weight:850;color:#c29aff}.price small{font-size:.8rem;color:var(--muted);font-weight:500}.card button{margin-top:12px;width:100%;cursor:pointer}.pricing{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.pricebox{padding:24px;border:1px solid #44287a;background:#0e0d22;border-radius:18px}.pricebox.featured{border-color:#a36aff;box-shadow:var(--glow)}.pricebox h3{margin:8px 0}.pricebox .amount{font-size:2rem;font-weight:900;letter-spacing:-.04em}.pricebox p,.fine{color:var(--muted);font-size:.92rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:22px;border-radius:16px;background:#0f0e21;border:1px solid #33215b}.num{color:#c49bff;font-weight:900;font-size:1.2rem}.contactbox{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px;border-radius:22px;border:1px solid #6b3ab5;background:radial-gradient(ellipse at right,#51238a55,transparent 55%),#100d22}.contactbox h2{margin:4px 0 8px}.footer{padding:24px 0 34px;border-top:1px solid #2e1e50;color:var(--muted);font-size:.85rem}.footerin{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.notice{margin-top:16px;color:#9e99bd;font-size:.8rem}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#21143a;border:1px solid #9d65ff;border-radius:12px;padding:12px 18px;opacity:0;pointer-events:none;transition:.2s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}.mobile-menu{display:none}
+@media(max-width:850px){.links{gap:12px}.cards{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr}.orb{min-height:260px;grid-row:1}.orb-circle{width:250px}.headset{font-size:7rem}.hero{padding-top:45px}.pricing{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.hero-grid>div:first-child{grid-row:2}}
+@media(max-width:600px){.navin{height:64px}.links{display:none}.nav .btn{padding:9px 12px;font-size:.82rem}.brand{font-size:1.12rem}.brandmark{width:33px;height:33px}.cards{grid-template-columns:1fr}.card p{min-height:0}.section-head{display:block}.hero h1{font-size:2.7rem}.contactbox{align-items:flex-start;flex-direction:column}.hero{padding-bottom:34px}section{padding:38px 0}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="#home" aria-label="Gleps Lab главная"><span class="brandmark">⚗</span><span>Gleps <span>Lab</span></span></a>
+<nav class="links"><a href="#home">Главная</a><a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#order">Как заказать</a></nav>
+<a class="btn" href="#contact">✈ Написать нам</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><span class="pill">◈ META QUEST 3S · VR SUPPORT</span><h1>Gleps Lab — твой<br><span class="gradient">VR-помощник</span></h1>
+<p class="lead">Помощь с настройкой Meta Quest, играми и совместимыми инструментами. Спокойно разберёмся и подберём решение под твоё устройство.</p>
+<div class="perks"><span>⚡ Быстро</span><span>✦ Понятно</span><span>◈ Согласуем цену</span></div>
+<a class="btn" href="#services">Посмотреть услуги <span>→</span></a>
+</div><div class="orb" aria-label="Декоративная VR-графика"><div class="orb-circle"><div class="orbit"></div><a class="headset" href="https://ru.wikipedia.org/wiki/Meta_Quest" target="_blank" rel="noopener" aria-label="Открыть Википедию о Meta Quest" title="Нажми, чтобы узнать о Meta Quest">🥽</a></div></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Что мы делаем</div><h2>Наши <span class="gradient">услуги</span></h2><p class="sub">Выбери, что нужно для твоего Quest.</p></div><span class="pill">VR · SETUP · SUPPORT</span></div>
+<div class="cards">
+<article class="card"><div class="ico">🎮</div><h3>Установка игр</h3><p>Помощь с установкой и настройкой доступных игр и приложений на твоём устройстве.</p><div class="price">от 400 ₽ <small>/ игра</small></div><button class="btn secondary" data-service="Установка игр">Выбрать услугу ↗</button></article>
+<article class="card"><div class="ico">⚙️</div><h3>Настройка Quest</h3><p>Подключение к ПК, USB-настройки и помощь с распространёнными техническими проблемами.</p><div class="price">от 500 ₽ <small>/ услуга</small></div><button class="btn secondary" data-service="Настройка Quest">Выбрать услугу ↗</button></article>
+<article class="card"><div class="ico">🧩</div><h3>Моды и инструменты</h3><p>Помощь с совместимыми модами и инструментами. Возможности зависят от игры и устройства.</p><div class="price">от 500 ₽ <small>/ услуга</small></div><button class="btn secondary" data-service="Моды и инструменты">Выбрать услугу ↗</button></article>
+
+</div><p class="notice">Цены ориентировочные. Перед началом работы согласуем итоговую стоимость. Устанавливаем только то, на что у клиента есть право доступа.</p>
+</div></section>
+<section id="prices"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Прозрачно и понятно</div><h2>Прайс-лист</h2><p class="sub">Точная стоимость зависит от задачи.</p></div></div>
+<div class="pricing">
+<div class="pricebox"><div class="ico">🎮</div><h3>Установка игры</h3><div class="amount">400 ₽<span class="fine">+</span></div><p>За одну игру. Совместимость проверяем заранее.</p><button class="btn secondary" data-service="Установка игры (от 400 ₽)">Заказать</button></div>
+<div class="pricebox featured"><div class="ico">⚙️</div><h3>Настройка устройства</h3><div class="amount">500 ₽<span class="fine">+</span></div><p>Помощь с настройкой Quest и подключением к ПК.</p><button class="btn" data-service="Настройка устройства (от 500 ₽)">Заказать</button></div>
+<p>Разберёмся с вопросом и возможными решениями.</p><button class="btn secondary" data-service="Консультация (от 300 ₽)">Заказать</button></div>
+</div></div></section>
+<section id="order"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Всего несколько шагов</div><h2>Как заказать?</h2></div></div>
+<div class="steps"><div class="step"><div class="num">01 / Напиши</div><h3>Расскажи о задаче</h3><p class="sub">Укажи модель шлема и какую услугу хочешь.</p></div><div class="step"><div class="num">02 / Согласуем</div><h3>Уточним детали</h3><p class="sub">Проверим совместимость и договоримся о цене.</p></div><div class="step"><div class="num">03 / Готово</div><h3>Настроим вместе</h3><p class="sub">После согласования приступим к работе.</p></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="contactbox"><div><div class="eyebrow">На связи</div><h2>Прокачаем твой <span class="gradient">VR-опыт</span></h2><p class="sub">Напиши в Telegram, и обсудим, чем помочь.</p></div><a class="btn" id="telegramLink" href="https://t.me/BobrTurbodobr" target="_blank" rel="noopener">✈ Написать в Telegram ↗</a></div><p class="notice">Перед публикацией замени <b>ТВОЙ_НИК</b> в ссылке на свой Telegram username.</p></div></section>
+</main>
+<footer class="footer"><div class="wrap footerin"><a class="brand" href="#home"><span class="brandmark">⚗</span><span>Gleps <span>Lab</span></span></a><span>Meta Quest · Игры · Настройка · Поддержка</span><span>© <span id="year"></span> Gleps Lab</span></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite">Услуга выбрана!</div>
+<script>
+const toast=document.getElementById('toast');
+document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>{
+ const service=btn.dataset.service;
+ const link=document.getElementById('telegramLink');
+ const username='BobrTurbodobr';
+ if(username==='ТВОЙ_НИК'){
+   toast.textContent='Услуга: '+service+' · Замени ТВОЙ_НИК на свой Telegram username в коде.';
+   toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3600);
+   document.querySelector('#contact').scrollIntoView({behavior:'smooth'});
+ }else{
+   window.open('https://t.me/'+username+'?text='+encodeURIComponent('Привет! Интересует услуга: '+service),'_blank','noopener');
+ }
+}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
